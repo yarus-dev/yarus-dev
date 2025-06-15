@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PT_Serif, PT_Mono } from "next/font/google";
+import { GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 
 const ptSerif = PT_Serif({
@@ -36,6 +37,7 @@ export default function RootLayout({
       lang="en"
       className={`${ptSerif.variable} ${ptMono.variable} antialiased w-screen min-h-screen h-full`}
     >
+      <GoogleTagManager gtmId={`GTM-${process.env.GTM}`} />
       <body className="w-full h-full flex flex-col items-start justify-stretch">
         <header>header</header>
         <main className="flex-1 w-full">{children}</main>

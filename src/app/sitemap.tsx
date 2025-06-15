@@ -1,7 +1,6 @@
 import { MetadataRoute } from "next";
-export const dynamic = "force-static";
 
-export const baseUrl = "https://www.usenko.pp.ua";
+export const dynamic = "force-static";
 
 type SitemapEntry = {
   url: string;
@@ -27,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return entries.map(
     ({ url, priority, lastModified, changeFrequency = "weekly", ...page }) => ({
       ...page,
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}${url}`,
+      url: `${process.env.BASE_URL}${url}`,
       priority: priority || 1 - url.split("/").length / 10,
       lastModified: lastModified || new Date().toISOString().split("T")[0],
       changeFrequency,
