@@ -1,0 +1,94 @@
+[debug] [2025-06-15T14:21:54.663Z] ----------------------------------------------------------------------
+[debug] [2025-06-15T14:21:54.665Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-06-15T14:21:54.665Z] CLI Version:   14.7.0
+[debug] [2025-06-15T14:21:54.665Z] Platform:      win32
+[debug] [2025-06-15T14:21:54.665Z] Node Version:  v20.19.2
+[debug] [2025-06-15T14:21:54.665Z] Time:          Sun Jun 15 2025 17:21:54 GMT+0300 (за східноєвропейським літнім часом)
+[debug] [2025-06-15T14:21:54.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-15T14:21:54.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-15T14:21:54.841Z] > authorizing via signed-in user (yar.usenko.inc@gmail.com)
+[info] i  emulators: Starting emulators: apphosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: apphosting"}}
+[debug] [2025-06-15T14:21:54.849Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-15T14:21:54.849Z] [apphosting] App Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-15T14:21:54.849Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"apphosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-15T14:21:54.853Z] [hub] writing locator at C:\Users\yarus\AppData\Local\Temp\hub-usenko-pp-ua.json
+[debug] [2025-06-15T14:21:54.880Z] Checked if tokens are valid: true, expires at: 1750000883955
+[debug] [2025-06-15T14:21:54.880Z] Checked if tokens are valid: true, expires at: 1750000883955
+[debug] [2025-06-15T14:21:54.881Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends 
+[debug] [2025-06-15T14:21:56.313Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends 200
+[debug] [2025-06-15T14:21:56.314Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends {"backends":[{"name":"projects/usenko-pp-ua/locations/europe-west4/backends/usenko-backend","createTime":"2025-06-15T11:02:58.607426955Z","updateTime":"2025-06-15T12:06:18.891740Z","uri":"usenko-backend--usenko-pp-ua.europe-west4.hosted.app","managedResources":[{"runService":{"service":"projects/427676535862/locations/europe-west4/services/usenko-backend"}}],"codebase":{"repository":"projects/usenko-pp-ua/locations/europe-west4/connections/apphosting-github-conn-vspd8w/gitRepositoryLinks/yarus-dev-yarus-dev","rootDirectory":"/"},"uid":"e43c6a48-0d75-49ca-88eb-3363c5822629","etag":"uA90eI2gqzNRr7jv-fyHNVM7hrRgXvLkhd7BqXLMNdU","reconciling":false,"servingLocality":"GLOBAL_ACCESS","serviceAccount":"firebase-app-hosting-compute@usenko-pp-ua.iam.gserviceaccount.com","appId":"1:427676535862:web:193ae122fd7306a139dc97","environment":"production"}]}
+[debug] [2025-06-15T14:21:56.314Z] Checked if tokens are valid: true, expires at: 1750000883955
+[debug] [2025-06-15T14:21:56.314Z] Checked if tokens are valid: true, expires at: 1750000883955
+[debug] [2025-06-15T14:21:56.315Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config [none]
+[debug] [2025-06-15T14:21:57.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config 200
+[debug] [2025-06-15T14:21:57.143Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config {"projectId":"usenko-pp-ua","appId":"1:427676535862:web:193ae122fd7306a139dc97","storageBucket":"usenko-pp-ua.firebasestorage.app","apiKey":"AIzaSyBCj5D9J6mmvIxuw0noK0G-2RHHJhj14LQ","authDomain":"usenko-pp-ua.firebaseapp.com","messagingSenderId":"427676535862","measurementId":"G-JPR5DZHZJB"}
+[info] i  apphosting: running custom start command: 'npm run dev' {"metadata":{"emulator":{"name":"apphosting"},"message":"running custom start command: 'npm run dev'"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] i  apphosting: connecting apphosting emulator {"metadata":{"emulator":{"name":"apphosting"},"message":"connecting apphosting emulator"}}
+[debug] [2025-06-15T14:21:59.481Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────┬────────────────┐
+│ Emulator    │ Host:Port      │
+├─────────────┼────────────────┤
+│ App Hosting │ localhost:5002 │
+└─────────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-06-15T15:22:05.605Z] ----------------------------------------------------------------------
+[debug] [2025-06-15T15:22:05.607Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-06-15T15:22:05.607Z] CLI Version:   14.7.0
+[debug] [2025-06-15T15:22:05.607Z] Platform:      win32
+[debug] [2025-06-15T15:22:05.607Z] Node Version:  v20.19.2
+[debug] [2025-06-15T15:22:05.607Z] Time:          Sun Jun 15 2025 18:22:05 GMT+0300 (за східноєвропейським літнім часом)
+[debug] [2025-06-15T15:22:05.607Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-15T15:22:05.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-15T15:22:05.792Z] > authorizing via signed-in user (yar.usenko.inc@gmail.com)
+[info] i  emulators: Starting emulators: apphosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: apphosting"}}
+[debug] [2025-06-15T15:22:05.800Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-15T15:22:05.800Z] [apphosting] App Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-15T15:22:05.801Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"apphosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project usenko-pp-ua. This may result in unexpected behavior. 
+[debug] [2025-06-15T15:22:05.806Z] [hub] writing locator at C:\Users\yarus\AppData\Local\Temp\hub-usenko-pp-ua.json
+[debug] [2025-06-15T15:22:05.836Z] Checked if tokens are valid: false, expires at: 1750000883955
+[debug] [2025-06-15T15:22:05.836Z] Checked if tokens are valid: false, expires at: 1750000883955
+[debug] [2025-06-15T15:22:05.836Z] > refreshing access token with scopes: []
+[debug] [2025-06-15T15:22:05.837Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-15T15:22:05.838Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-15T15:22:05.989Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-15T15:22:05.989Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-15T15:22:06.016Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends 
+[debug] [2025-06-15T15:22:07.106Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends 200
+[debug] [2025-06-15T15:22:07.106Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/usenko-pp-ua/locations/-/backends {"backends":[{"name":"projects/usenko-pp-ua/locations/europe-west4/backends/usenko-backend","createTime":"2025-06-15T11:02:58.607426955Z","updateTime":"2025-06-15T12:06:18.891740Z","uri":"usenko-backend--usenko-pp-ua.europe-west4.hosted.app","managedResources":[{"runService":{"service":"projects/427676535862/locations/europe-west4/services/usenko-backend"}}],"codebase":{"repository":"projects/usenko-pp-ua/locations/europe-west4/connections/apphosting-github-conn-vspd8w/gitRepositoryLinks/yarus-dev-yarus-dev","rootDirectory":"/"},"uid":"e43c6a48-0d75-49ca-88eb-3363c5822629","etag":"uA90eI2gqzNRr7jv-fyHNVM7hrRgXvLkhd7BqXLMNdU","reconciling":false,"servingLocality":"GLOBAL_ACCESS","serviceAccount":"firebase-app-hosting-compute@usenko-pp-ua.iam.gserviceaccount.com","appId":"1:427676535862:web:193ae122fd7306a139dc97","environment":"production"}]}
+[debug] [2025-06-15T15:22:07.106Z] Checked if tokens are valid: true, expires at: 1750004524989
+[debug] [2025-06-15T15:22:07.107Z] Checked if tokens are valid: true, expires at: 1750004524989
+[debug] [2025-06-15T15:22:07.107Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config [none]
+[debug] [2025-06-15T15:22:07.960Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config 200
+[debug] [2025-06-15T15:22:07.960Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:427676535862:web:193ae122fd7306a139dc97/config {"projectId":"usenko-pp-ua","appId":"1:427676535862:web:193ae122fd7306a139dc97","storageBucket":"usenko-pp-ua.firebasestorage.app","apiKey":"AIzaSyBCj5D9J6mmvIxuw0noK0G-2RHHJhj14LQ","authDomain":"usenko-pp-ua.firebaseapp.com","messagingSenderId":"427676535862","measurementId":"G-JPR5DZHZJB"}
+[info] i  apphosting: running custom start command: 'npm run dev' {"metadata":{"emulator":{"name":"apphosting"},"message":"running custom start command: 'npm run dev'"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] i  apphosting: connecting apphosting emulator {"metadata":{"emulator":{"name":"apphosting"},"message":"connecting apphosting emulator"}}
+[debug] [2025-06-15T15:22:10.310Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────┬────────────────┐
+│ Emulator    │ Host:Port      │
+├─────────────┼────────────────┤
+│ App Hosting │ localhost:5002 │
+└─────────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

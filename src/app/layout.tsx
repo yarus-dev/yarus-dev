@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PT_Serif, PT_Mono } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
-import "@/lib/firebase";
 import { cn } from "@/lib/cn";
+import { Footer } from "@/components/layout/footer";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -46,10 +46,10 @@ export default function RootLayout({
       )}
     >
       <GoogleTagManager gtmId={`GTM-${process.env.GTM}`} />
-      <body className="w-full h-full flex flex-col items-start justify-stretch">
+      <body className="w-full h-full flex flex-col items-stretch justify-stretch">
         <header>header</header>
         <main className="flex-1 size-full">{children}</main>
-        <footer>footer</footer>
+        <Footer />
       </body>
     </html>
   );
