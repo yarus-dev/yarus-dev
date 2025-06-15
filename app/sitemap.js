@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://yarus.app',
+      url: 'https://www.usenko.pp.ua',
       lastModified: new Date(),
       changeFrequency: 'Monthly',
       priority: 1,
