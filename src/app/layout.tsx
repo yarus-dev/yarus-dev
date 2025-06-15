@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { PT_Serif, PT_Mono } from "next/font/google";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
+import "@/lib/firebase";
+import { cn } from "@/lib/cn";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -35,12 +37,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ptSerif.variable} ${ptMono.variable} antialiased w-screen min-h-screen h-full`}
+      className={cn(
+        ptSerif.variable,
+        ptMono.variable,
+        "antialiased",
+        "size-full",
+        "min-h-screen"
+      )}
     >
       <GoogleTagManager gtmId={`GTM-${process.env.GTM}`} />
       <body className="w-full h-full flex flex-col items-start justify-stretch">
         <header>header</header>
-        <main className="flex-1 w-full">{children}</main>
+        <main className="flex-1 size-full">{children}</main>
         <footer>footer</footer>
       </body>
     </html>
