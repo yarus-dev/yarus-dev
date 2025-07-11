@@ -10,7 +10,7 @@ const NAV = [
 
 const SOCIAL = [
   {
-    label: "Fasebook",
+    label: "Facebook",
     slug: "https://www.facebook.com/yar.usenko",
     Icon: BsFacebook,
   },
@@ -21,12 +21,12 @@ const SOCIAL = [
   },
   {
     label: "LinkedIn",
-    slug: 'linkedin',
-    Icon: BsLinkedin
+    slug: "https://www.linkedin.com/in/yar-usenko-inc",
+    Icon: BsLinkedin,
   },
   {
     label: "GitHub",
-    slug: "https://www.linkedin.com/in/yar-usenko-inc",
+    slug: "https://github.com/yar-usenko",
     Icon: BsGithub,
   },
 ];
